@@ -1,66 +1,66 @@
 export const organizers = [
     {
-        name: "John Doe",
+        name: "Sang Ho Suh",
         pfp: "https://via.placeholder.com/150",
-        website: "https://website.com",
-        institution: "Institution Name",
-        title: "Organizer Title"
+        website: "https://sanghosuh.github.io",
+        institution: "University of Toronto",
+        title: "Postdoctoral Fellow in the Dynamic Graphics Project (DGP) Lab at the University of Toronto"
     },
     {
-        name: "Jane Smith",
+        name: "Ian Arawjo",
         pfp: "https://via.placeholder.com/150",
-        website: "https://website.com",
-        institution: "Institution Name",
-        title: "Organizer Title"
+        website: "https://ianarawjo.com",
+        institution: "University of Montréal",
+        title: "Assistant Professor of Human-Computer Interaction at the University of Montréal"
     },
     {
-        name: "Jane Smith",
+        name: "Rubaiat Habib",
         pfp: "https://via.placeholder.com/150",
-        website: "https://website.com",
-        institution: "Institution Name",
-        title: "Organizer Title"
+        website: "https://rubaiathabib.me",
+        institution: "Adobe Research",
+        title: "Sr. Research Scientist at Adobe Research"
     },
     {
-        name: "Jane Smith",
+        name: "Nazmus Saquib",
         pfp: "https://via.placeholder.com/150",
-        website: "https://website.com",
-        institution: "Institution Name",
-        title: "Organizer Title"
+        website: "https://www.nsaquib.org",
+        institution: "MIT Media Lab",
+        title: "Computer Scientist, Designer, and Entrepreneur"
     },
     {
-        name: "Jane Smith",
+        name: "Jingyi",
         pfp: "https://via.placeholder.com/150",
-        website: "https://website.com",
+        website: "https://jingyi.me",
         institution: "Institution Name",
-        title: "Organizer Title"
+        title: "Assistant Professor of Computer Science at Pomona College"
     },
     {
-        name: "Jane Smith",
+        name: "Hai Dang",
         pfp: "https://via.placeholder.com/150",
-        website: "https://website.com",
-        institution: "Institution Name",
-        title: "Organizer Title"
+        website: "https://hdang.notion.site",
+        institution: "University of Bayreuth",
+        title: "PhD Candidate at the University of Bayreuth"
     },
     {
-        name: "Jane Smith",
+        name: "Arvind Satyanarayan",
         pfp: "https://via.placeholder.com/150",
-        website: "https://website.com",
-        institution: "Institution Name",
-        title: "Organizer Title"
+        website: "https://arvindsatya.com",
+        institution: "MIT",
+        title: "Associate Professor (pre-tenure) of Computer Science at MIT"
     },
     {
-        name: "Jane Smith",
+        name: "Josh Pollock",
         pfp: "https://via.placeholder.com/150",
-        website: "https://website.com",
-        institution: "Institution Name",
-        title: "Organizer Title"
+        website: "https://joshmpollock.com",
+        institution: "MIT",
+        title: "PhD student at MIT"
     },
     {
-        name: "Jane Smith",
+        name: "Ryan Yen",
         pfp: "https://via.placeholder.com/150",
-        website: "https://website.com",
-        institution: "Institution Name",
-        title: "Organizer Title"
+        website: "https://ryanyen2.github.io",
+        institution: "MIT",
+        title: "Human-Computer Researcher"
     },
     // Add more organizers here
 ];
