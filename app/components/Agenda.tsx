@@ -20,14 +20,14 @@ const sessionData = [
     {
         time: '9:00 - 10:00 AM',
         title: 'Opening and introductions',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor eget lacus id cursus. Nullam ac molestie nisi.',
+        description: 'A brief introduction to the workshop, including the goals, schedule, and logistics. Organizers will provide an overview of the workshop theme and objectives, setting the stage for the day’s activities.',
         icon: <FaChampagneGlasses className="text-xl" />,
         components: null
     },
     {
         time: '10:00 - 11:00 AM',
         title: 'Opening Keynote',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor eget lacus id cursus. Nullam ac molestie nisi.',
+        description: 'Our keynote speakers give a talk on the topic of dynamic abstractions. The session will also include a 10-minute Q\&A moderated by one of the organizers, allowing attendees to engage with the speaker and delve deeper into the subject matter.',
         icon: <FaMicrophone className="text-xl" />,
         components: (
             <div className="flex flex-col md:flex-row justify-between mt-3">
@@ -45,7 +45,7 @@ const sessionData = [
     {
         time: '11:00 - 12:00 AM',
         title: 'Group Brainstorming & Discussion',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor eget lacus id cursus. Nullam ac molestie nisi. Curabitur id est venenatis, auctor urna id, finibus erat. Proin laoreet',
+        description: 'Participants will engage in a group brainstorming session to explore the concept of dynamic abstractions. The session will be divided into small groups, each led by an organizer, to facilitate discussion and idea generation. Participants will be encouraged to share their thoughts, experiences, and insights on the topic, focusing on the following questions:',
         icon: (<GrWorkshop className="text-xl" />),
         components: (<ul className="list-disc pl-5">
             <li>What examples of dynamic abstractions exist?</li>

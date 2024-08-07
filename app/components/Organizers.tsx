@@ -8,18 +8,18 @@ const Organizer: React.FC = () => {
       <h2 className="text-blue-500 text-2xl font-bold">Organizers</h2>
       <div className="flex flex-wrap mt-4">
         {organizers.map((organizer, index) => (
-          <div key={index} className="flex items-center sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4 space-x-4 pr-4">
+          <div key={index} className="flex items-center w-full sm:w-1/2 md:w-1/2 mb-4 space-x-4 pr-4">
             <img
               src={organizer.pfp}
               alt={`${organizer.name}'s profile`}
-              className="rounded-full border object-cover sm:w-8 sm:h-8 w-12 h-12"
+              className="rounded-full border object-cover sm:w-14 sm:h-14 w-14 h-14"
             />
-            <div>
+            <div className="w-3/4">
               <a href={organizer.website} target="_blank" rel="noopener noreferrer" className="flex items-center mt-1 font-semibold hover:text-blue-500">
                 {organizer.name}
               </a>
-              <h4 className="text-sm text-gray-800">{organizer.title}</h4>
-              <p className="text-sm text-gray-600">{organizer.institution}</p>
+              <h4 className="text-gray-800">{organizer.title}</h4>
+              <p className="text-gray-600">{organizer.institution}</p>
             </div>
           </div>
         ))}
