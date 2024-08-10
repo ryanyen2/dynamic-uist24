@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useContext, createContext, useState } from 'react';
-import { FaRegComments, FaEnvelope } from 'react-icons/fa';
+import { FaRegHand } from "react-icons/fa6";
 import {
   Tldraw,
   TLUiComponents,
@@ -49,7 +49,7 @@ const Banner: React.FC = () => {
   const [editor, setEditor] = useState<Editor | null>(null)
 
   return (
-    <div className='mt-8 flex flex-col justify-center items-center relative' style={{ height: '52vh', minHeight: '72vh' }}>
+    <div className='flex flex-col justify-center items-center relative' style={{ height: '62vh', minHeight: '82vh' }}>
       <div className="absolute top-0 left-0 right-0 bottom-0">
         <Tldraw store={store} components={components} onMount={(editor) => setEditor(editor)} />
         {editor && (
@@ -88,6 +88,13 @@ const ExternalToolbar = () => {
   return (
     <div>
       <div className="external-toolbar">
+        <button
+          className="external-button"
+          data-isactive={currentToolId === 'hand'}
+          onClick={() => editor.setCurrentTool('hand')}
+        >
+          <FaRegHand />
+        </button>
         <button
           className="external-button"
           data-isactive={currentToolId === 'select'}

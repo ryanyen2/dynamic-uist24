@@ -153,9 +153,9 @@ body {
   filter: brightness(1.1);
 }
 
-.tlui-toolbar__left {
+/* .tlui-toolbar__left {
   display: none !important;
-}
+} */
 
 @keyframes waveAnimation {
   0% {

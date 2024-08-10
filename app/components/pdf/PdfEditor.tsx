@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState, useContext, createContext } from 'react';
 import {
     Box,
     SVGContainer,
@@ -14,11 +14,16 @@ import {
     TLAssetId,
     TLShapeId,
     AssetRecordType,
-    createShapeId
+    createShapeId,
+    useValue,
+    Editor
 } from 'tldraw';
 import { ExportPdfButton } from './ExportPdfButton';
 import 'pdfjs-dist/build/pdf.worker.min.mjs';
+import { FaHighlighter } from "react-icons/fa";
+import { FaRegHand } from "react-icons/fa6";
 
+const editorContext = createContext({} as { editor: Editor })
 
 export interface PdfPage {
     src: string
@@ -37,6 +42,8 @@ export function PdfEditor() {
     const [isLoading, setIsLoading] = useState(false);
     const [pdf, setPdf] = useState<Pdf | null>(null);
     const pageSpacing = 32
+    const [editor, setEditor] = useState<Editor | null>(null)
+
 
 
     async function loadPdf(name: string, source: ArrayBuffer): Promise<Pdf> {
@@ -119,7 +126,7 @@ export function PdfEditor() {
             Minimap: null,
             // StylePanel: null,
             NavigationPanel: null,
-            // Toolbar: null,
+            Toolbar: null,
             KeyboardShortcutsDialog: null,
             QuickActions: null,
             HelperButtons: null,
@@ -137,6 +144,7 @@ export function PdfEditor() {
     return (
         <Tldraw
             onMount={(editor) => {
+                setEditor(editor)
                 editor.updateInstanceState({ isDebugMode: false });
                 editor.createAssets(
                     pdf.pages.map((page) => ({
@@ -172,7 +180,7 @@ export function PdfEditor() {
                 );
 
 
-                editor.setCurrentTool('highlight');
+                editor.setCurrentTool('hand');
 
                 const shapeIds = pdf.pages.map((page) => page.shapeId);
                 const shapeIdSet = new Set(shapeIds);
@@ -247,9 +255,43 @@ export function PdfEditor() {
                 updateCameraBounds(isMobile);
             }}
             components={components}
-        />
+        >
+            {editor && (
+                <editorContext.Provider value={{ editor }}>
+                    <ExternalToolbar />
+                </editorContext.Provider>
+            )}
+        </Tldraw>
     );
 }
+
+const ExternalToolbar = () => {
+    const { editor } = useContext(editorContext)
+
+    const currentToolId = useValue('current tool id', () => editor?.getCurrentToolId(), [editor])
+
+    return (
+        <div>
+            <div className="external-toolbar">
+            <button
+          className="external-button"
+          data-isactive={currentToolId === 'hand'}
+          onClick={() => editor.setCurrentTool('hand')}
+        >
+          <FaRegHand />
+        </button>
+                <button
+                    className="external-button"
+                    data-isactive={currentToolId === 'highlight'}
+                    onClick={() => editor.setCurrentTool('highlight')}
+                >
+                    <FaHighlighter />
+                </button>
+            </div>
+        </div>
+    )
+}
+
 
 const PageOverlayScreen = track(function PageOverlayScreen({ pdf }: { pdf: Pdf }) {
     const editor = useEditor();

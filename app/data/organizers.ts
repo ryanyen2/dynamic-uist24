@@ -7,6 +7,27 @@ export const organizers = [
         title: "Postdoctoral Fellow in the Dynamic Graphics Project (DGP) Lab"
     },
     {
+        name: "Hai Dang",
+        pfp: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=-BpP7hsAAAAJ&citpid=2",
+        website: "https://hdang.notion.site",
+        institution: "University of Bayreuth",
+        title: "PhD Candidate"
+    },
+    {
+        name: "Ryan Yen",
+        pfp: "https://ryanyen2.github.io/images/profile-pic.jpeg",
+        website: "https://ryanyen2.github.io",
+        institution: "MIT",
+        title: "PhD student"
+    },
+    {
+        name: "Josh Pollock",
+        pfp: "https://joshmpollock.com/assets/images/jmp_square_2022.jpg",
+        website: "https://joshmpollock.com",
+        institution: "MIT",
+        title: "PhD student"
+    },
+    {
         name: "Ian Arawjo",
         pfp: "https://ianarawjo.com/images/headshot2.jpg",
         website: "https://ianarawjo.com",
@@ -28,18 +49,18 @@ export const organizers = [
         title: "Computer Scientist, Designer, and Entrepreneur"
     },
     {
+        name: "Gari Subramonyam",
+        pfp: "https://haridecoded.com/images/me_circle.png",
+        website: "https://haridecoded.com",
+        institution: "Stanford University",
+        title: "Research Assistant Professor at the Graduate School of Education"
+    },
+    {
         name: "Jingyi",
         pfp: "https://jingyi.me/image/me.jpg",
         website: "https://jingyi.me",
         institution: "Pomona College",
         title: "Assistant Professor of Computer Science"
-    },
-    {
-        name: "Hai Dang",
-        pfp: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=-BpP7hsAAAAJ&citpid=2",
-        website: "https://hdang.notion.site",
-        institution: "University of Bayreuth",
-        title: "PhD Candidate"
     },
     {
         name: "Arvind Satyanarayan",
@@ -48,19 +69,4 @@ export const organizers = [
         institution: "MIT",
         title: "Associate Professor (pre-tenure) of Computer Science"
     },
-    {
-        name: "Josh Pollock",
-        pfp: "https://joshmpollock.com/assets/images/jmp_square_2022.jpg",
-        website: "https://joshmpollock.com",
-        institution: "MIT",
-        title: "PhD student"
-    },
-    {
-        name: "Ryan Yen",
-        pfp: "https://ryanyen2.github.io/images/profile-pic.jpeg",
-        website: "https://ryanyen2.github.io",
-        institution: "MIT",
-        title: "Human-Computer Researcher"
-    },
-    // Add more organizers here
 ];
