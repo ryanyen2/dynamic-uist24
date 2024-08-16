@@ -7,22 +7,24 @@ const Joining: React.FC = () => {
       <div className="flex-1">
         <h2 className="text-blue-500 text-2xl font-bold">Joining the Workshop</h2>
         <p className="text-gray-600 mt-2 text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor eget lacus id cursus. 
-          Nullam ac molestie nisi. Sed varius ligula in iaculis lobortis. Curabitur id est venenatis, 
-          auctor urna id, finibus erat. Proin laoreet.
+          To participate, please register for the workshop through the UIST registration system. 
+          The workshop will be held in-person only.
         </p>
       </div>
       <div className="flex space-x-4 mt-4 sm:mt-0 sm:ml-8">
-        <div className="flex flex-col items-center cursor-pointer">
+        {/* <div className="flex flex-col items-center cursor-pointer">
           <div className="w-8 h-8 bg-white border border-blue-400 rounded-md flex items-center justify-center text-blue-400">
             <FaGlobe className="text-xl" />
           </div>
           <p className="mt-2 text-sm font-semibold">Website</p>
-        </div>
+        </div> */}
         <div className="flex flex-col items-center cursor-pointer">
-          <div className="w-8 h-8 bg-white border border-blue-400 rounded-md flex items-center justify-center text-blue-400">
+          <a
+            href="https://discord.gg/kVBGW5GG"
+            target="_blank"
+            className="w-8 h-8 bg-white border border-blue-400 rounded-md flex items-center justify-center text-blue-400">
             <FaDiscord className="text-xl" />
-          </div>
+          </a>
           <p className="mt-2 text-sm font-semibold">Discord</p>
         </div>
         <div className="flex flex-col items-center cursor-pointer">

@@ -49,7 +49,7 @@ export const organizers = [
         title: "Computer Scientist, Designer, and Entrepreneur"
     },
     {
-        name: "Gari Subramonyam",
+        name: "Hari Subramonyam",
         pfp: "https://haridecoded.com/images/me_circle.png",
         website: "https://haridecoded.com",
         institution: "Stanford University",

@@ -33,11 +33,7 @@ const sessionData = [
             <div className="flex flex-col md:flex-row justify-between mt-3">
                 <div className="flex items-center space-x-4 mb-4 md:mb-0"> {/* Add `mb-4 md:mb-0` to add margin-bottom on small screens and remove it on medium screens and larger */}
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" alt="Speaker 1" className="w-12 h-12 rounded-full" />
-                    <p>Speaker 1 Description</p>
-                </div>
-                <div className="flex items-center space-x-4">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" alt="Speaker 2" className="w-12 h-12 rounded-full" />
-                    <p>Speaker 2 Description</p>
+                    <p>Speaker 1 TBA</p>
                 </div>
             </div>
         )
@@ -65,6 +61,14 @@ const sessionData = [
         title: 'Keynote 2',
         description: 'The second keynote speaker will deliver a 50-minute talk on a relevant topic, providing further insights and inspiration. The session will also include a 10-minute Q\&A moderated by one of the organizers, allowing attendees to engage with the speaker and delve deeper into the subject matter.',
         icon: <RiSlideshowLine className="text-xl" />,
+        components: (
+            <div className="flex flex-col md:flex-row justify-between mt-3">
+                <div className="flex items-center space-x-4">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" alt="Speaker 2" className="w-12 h-12 rounded-full" />
+                    <p>Speaker 2 TBA</p>
+                </div>
+            </div>
+        )
     },
     {
         time: '15:30 - 16:00 PM',
