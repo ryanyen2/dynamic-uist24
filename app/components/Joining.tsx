@@ -29,7 +29,7 @@ const Joining: React.FC = () => {
         </div>
         <div className="flex flex-col items-center cursor-pointer">
           <div className="w-8 h-8 bg-white border border-blue-400 rounded-md flex items-center justify-center text-blue-400">
-            <FaEnvelope className="text-xl" />
+            <a href="mailto:dynamicabstractions.gmail.com"><FaEnvelope className="text-xl" /></a>
           </div>
           <p className="mt-2 text-sm font-semibold">Email</p>
         </div>
