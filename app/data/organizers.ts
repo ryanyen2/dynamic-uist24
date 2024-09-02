@@ -43,10 +43,10 @@ export const organizers = [
     },
     {
         name: "Nazmus Saquib",
-        pfp: "https://media.licdn.com/dms/image/C4E03AQHDadXEY9_zSQ/profile-displayphoto-shrink_200_200/0/1557087349783?e=1728518400&v=beta&t=c7W0ImKWI7bFAfixuaRnzxHg_6eU4mGAdyBeLJUncpQ",
+        pfp: "https://dynamicabstractions.github.io/img/team/saquib.jpeg",
         website: "https://www.nsaquib.org",
-        institution: "MIT Media Lab",
-        title: "Computer Scientist, Designer, and Entrepreneur"
+        institution: "Universal Machine Inc.",
+        title: "Founder"
     },
     {
         name: "Hari Subramonyam",
