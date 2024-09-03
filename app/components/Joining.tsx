@@ -20,7 +20,7 @@ const Joining: React.FC = () => {
         </div> */}
         <div className="flex flex-col items-center cursor-pointer">
           <a
-            href="https://discord.gg/kVBGW5GG"
+            href="https://discord.com/invite/qn843BCAmN"
             target="_blank"
             className="w-8 h-8 bg-white border border-blue-400 rounded-md flex items-center justify-center text-blue-400">
             <FaDiscord className="text-xl" />
