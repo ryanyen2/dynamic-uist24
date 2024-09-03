@@ -67,6 +67,6 @@ export const organizers = [
         pfp: "https://arvindsatya.com/imgs/arvindsatya-2023.jpg",
         website: "https://arvindsatya.com",
         institution: "MIT",
-        title: "Associate Professor (pre-tenure) of Computer Science"
+        title: "Associate Professor of Computer Science"
     },
 ];
