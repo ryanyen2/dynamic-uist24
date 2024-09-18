@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@tldraw/sync": "^2.4.3",
-    "next": "14.2.5",
+    "next": "14.2.10",
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^4.5.136",
     "react": "^18",
