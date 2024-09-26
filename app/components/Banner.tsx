@@ -124,6 +124,11 @@ const ExternalToolbar = () => {
           <IoText />
         </button>
       </div>
+      {/* a right aligned footnote as disclaimer of this white boars is collaborative... public... watch out the behavior */}
+      {/* italic */}
+      <span className="text-xs text-right block mt-2 text-gray-500 italic">
+        * This whiteboard is collaborative and public. Please be respectful of others and do not share sensitive information.
+      </span>
     </div>
   )
 }
