@@ -68,7 +68,7 @@ const Banner: React.FC = () => {
           </p>
           <hr className="my-4 w-1/3 border-gray-300 mx-auto" />
           <p>UIST&apos;24 Workshop @ Pittsburgh, USA</p>
-          <p>Oct. 13 - Oct. 16, 2024</p>
+          <p>Oct. 13, 2024</p>
 
           {/* <div className="flex justify-center mt-4 space-x-4">
             <FaRegComments className="text-2xl cursor-pointer" />
