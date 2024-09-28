@@ -7,6 +7,7 @@ const Footer: React.FC = () => {
             <p>© UIST 2024 Dynamic Abstraction Workshop</p>
             <div style="display: none;">
                 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=tWG8RqUFpZ6XnwRDFuvGwsMaB_7HqCbJxJGHQZMF6eE&cl=ffffff&w=a"></script>
+                <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=r7k3lLw_SqZirZdVuYiq1UYuknvpBU-8dp7gPLeTcJA&cl=ffffff&w=a"></script>
             </div>
         </footer>
     );
