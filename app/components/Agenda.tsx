@@ -90,7 +90,24 @@ interface SessionItemProps {
 
 const sessionData = [
     {
-        time: '09:00 - 10:15 AM',
+        time: '09:00 - 10:30 PM',
+        title: 'Keynote',
+        description: 'Our keynote speaker gives a talk followed by a Q&A session.',
+        icon: <FaMicrophone className="text-xl" />,
+        components: (
+            <div className="flex flex-col md:flex-row justify-between mt-3">
+                <div className="flex items-center space-x-4 mb-4 md:mb-0">
+                    <img src="https://avatars.githubusercontent.com/u/5403917?v=4" alt="Speaker 1" className="w-16 h-16 rounded-full" />
+                    <a href='https://thesephist.com/' target='_blank' rel='noreferrer noopener' className='hover:underline hover:text-blue-500'>Linus</a>
+                    <span className="text-gray-600 text-xs md:text-sm">
+                        Linus is currently researching and advising on AI interpretability, interfaces, and deployment at Thrive Capital. Previously, Linus was a Research Engineer at Notion, Researcher in Residence at Betaworks, and before that a software engineer at Replit, Hack Club, and Spensa.
+                    </span>
+                </div>
+            </div>
+        )
+    },
+    {
+        time: '10:45 - 12:00 AM',
         title: 'Opening & Introductions',
         description: 'This session includes opening remarks, introductions, and networking.',
         icon: <FaChampagneGlasses className="text-xl" />,
@@ -108,23 +125,6 @@ const sessionData = [
     //     description: 'A short break for refreshments and informal discussions.',
     //     icon: <FaCoffee className="text-xl" />,
     // },
-    {
-        time: '10:45 - 12:00 PM',
-        title: 'Keynote',
-        description: 'Our keynote speaker gives a talk followed by a Q&A session.',
-        icon: <FaMicrophone className="text-xl" />,
-        components: (
-            <div className="flex flex-col md:flex-row justify-between mt-3">
-                <div className="flex items-center space-x-4 mb-4 md:mb-0">
-                    <img src="https://avatars.githubusercontent.com/u/5403917?v=4" alt="Speaker 1" className="w-16 h-16 rounded-full" />
-                    <a href='https://thesephist.com/' target='_blank' rel='noreferrer noopener' className='hover:underline hover:text-blue-500'>Linus</a>
-                    <span className="text-gray-600 text-xs md:text-sm">
-                        Linus is currently researching and advising on AI interpretability, interfaces, and deployment at Thrive Capital. Previously, Linus was a Research Engineer at Notion, Researcher in Residence at Betaworks, and before that a software engineer at Replit, Hack Club, and Spensa.
-                    </span>
-                </div>
-            </div>
-        )
-    },
     // {
     //     time: '12:00 - 1:30 PM',
     //     title: 'Lunch',
